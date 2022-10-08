@@ -1,0 +1,334 @@
+{"level":"error","message":"producto con id 20 no encontrado"}
+{"level":"warn","message":"ruta: /api/prod, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/, método: POST no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/, método: POST no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/, método: POST no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /login, método: POST no implementada"}
+{"level":"warn","message":"ruta: /login, método: POST no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/productos, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/1/productos, método: GET no implementada"}
+{"level":"warn","message":"ruta: /login, método: POST no implementada"}
+{"level":"warn","message":"ruta: /api/productos, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"{}\" (type Object) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"{}\" (type Object) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"{}\" (type Object) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"{}\" (type Object) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"{}\" (type Object) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"{}\" (type Object) at path \"id\" for model \"cart\""}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito//productos?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito//productos?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/prueba5@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/prueba5@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":"error al buscar por id TypeError: Cannot read properties of undefined (reading 'username')"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/carrito/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/avatars/d36@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /avatars/prueba@gmail.com.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/prueba@gmail.com.jpeg, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/productos-test, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/carrito, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /favicon.ico, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /favicon.ico, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"6341bafb196f8a9241c540a6\" (type string) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"6341bafb196f8a9241c540a6\" (type string) at path \"id\" for model \"cart\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to Number failed for value \"6341bafb196f8a9241c540a6\" (type string) at path \"id\" for model \"cart\""}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
