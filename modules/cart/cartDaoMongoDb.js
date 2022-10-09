@@ -12,13 +12,11 @@ class CartDaoMongoDb {
 
   async saveCart(cart) {
     const dto = await cart.toDTO();
-    console.log("dto en save cartdaomongo", dto)
     return this.clientMongoDb.save(dto);
   }
 
   async getById(id) {
     const dto = await this.clientMongoDb.getById(id);
-    console.log("cart dto en dao", dto)
     return Cart.fromDTO(dto[0]);
   }
   

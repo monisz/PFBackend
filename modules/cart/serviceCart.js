@@ -13,7 +13,7 @@ class CartService {
     }
     
     //Para crear el carrtio carrito luego del logueo
-    async createCart () {
+    async createCart (user) {
         /* const newCart = { */
         /*     timestamp : Date.now(), */
         /*     products: [] */
@@ -21,7 +21,9 @@ class CartService {
         /* return await this.dao.save(newCart); */
         const timestamp = Date.now();
         const products = [];
-        const newCart = new Cart(timestamp, products);
+        const email = user.username;
+        const address = user.address;
+        const newCart = new Cart(timestamp, products, email, address);
         const newC = await this.dao.saveCart(newCart);
         console.log("nuevocarrito en servicecart", newC)
         return newC.id;

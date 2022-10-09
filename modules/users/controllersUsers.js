@@ -31,7 +31,7 @@ const login = (req, res) => {
 const loginUser = async (req, res) => {
     const user = userService.defineUser(req.user);
     req.session.user = user;
-    const idCart = await cartService.createCart();
+    const idCart = await cartService.createCart(user);
     req.session.cart = idCart;
     logger.info(`carrito agregado id: ${idCart}`);
     res.render('home',  {user, idCart});

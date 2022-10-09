@@ -31,14 +31,19 @@ const addProductToCart = async (req, res) => {
     if (!productToAdd) res.status(404).send({error: "producto no encontrado"});
     else {
         const idCart = req.session.cart;
-        console.log("idcart en controllerCart", idCart)
         const cartFinded = await cartService.getCart(idCart);
         if (!cartFinded) res.send('error: no existe ese carrito');
         else {
-            cartFinded.products.push(productToAdd);
+            const productFindedInCart = cartFinded.products.find(prod => prod.id == productToAdd.id)
+            if (!productFindedInCart) {
+                productToAdd.cant = 1;
+                cartFinded.products.push(productToAdd);
+            } else {
+                productToAdd.cant = productFindedInCart.cant + 1;
+                cartFinded.products.map(prod => {if(prod.id == productToAdd.id) prod.cant = productToAdd.cant});
+            }
             const cartModified = await cartService.updateCart(idCart, cartFinded);
             const productsInCart = cartModified[0].products;
-            console.log("products in cart!", productsInCart)
             logger.info(`producto id: ${idProduct} agregado en carrito id: ${idCart}`);
             const user = req.session.user;
             res.render('cart', {user, cartModified, productsInCart, idCart});
