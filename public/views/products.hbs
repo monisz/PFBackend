@@ -18,18 +18,18 @@
 </div>
 
 <div class="container p-3 my-4 bg-light" style="display:flex; justify-content:space-around">
-    <form action="/api/productos" method="GET" id="" >
-        <button type="submit" class="btn btn-primary">Productos</button>
-    </form>
-    <form action="/api/carrito/{{idCart}}/productos" method="GET" id="" >
-        <button type="submit" class="btn btn-primary">Carrito</button>
-    </form>
+  <form action="/productos" method="GET" id="" >
+    <button type="submit" class="btn btn-primary">Productos</button>
+  </form>
+  <form action="/carrito/{{idCart}}" method="GET" id="" >
+    <button type="submit" class="btn btn-primary">Carrito</button>
+  </form>
 </div>
 
 {{#if admin }}
 <div class="container p-5 my-5 bg-light">
   <h1 style="color:blue">Ingrese Producto</h1>
-  <form action="/api/productos" method="POST" id="form">
+  <form action="/productos" method="POST" id="form">
     <div class="mb-3 mt-3">
       <label for="title" class="form-label">Nombre</label>
       <input type="text" class="form-control" id="name" placeholder="Ingrese el nombre del producto" name="title" required>
@@ -83,7 +83,7 @@
             <td>{{price}}</td>
             <td><img src="{{thumbnail}}" height="50rem"></td>
             <td>
-              <form action="/api/carrito/{{id}}/productos" method="POST" id="" >
+              <form action="/carrito/{{id}}" method="POST" id="" >
                 <button type="submit" class="btn btn-primary">Agregar al carrito</button>
               </form>
             </td>

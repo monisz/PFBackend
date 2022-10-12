@@ -6,33 +6,33 @@ const { Database } = require('../../dataBase/connectionDatabase');
 const connect = Database.getConnection(); 
 
 class UserDaoMongoDb {
-    constructor() {
-        this.clientMongoDb = new ClientMongoDb(userSchema, connect);
-    }
+  constructor() {
+    this.clientMongoDb = new ClientMongoDb(userSchema, connect);
+  }
 
-    async saveUser(user) {
-        const dto = await user.toDto();
-        return this.clientMongoDb.save(dto);
-    }
+  async saveUser(user) {
+    const dto = await user.toDTO();
+    return this.clientMongoDb.save(dto);
+  }
 
-    async updateById(username, user) {
-        const dto = await user.toDto();
-        return this.clientMongoDb.replaceUserById(username, dto);
-    }
+  async updateById(username, user) {
+    const dto = await user.toDTO();
+    return this.clientMongoDb.replaceUserById(username, dto);
+  }
 
-    async getUserById(username) {
-        const dto = await this.clientMongoDb.getUserById(username);
-        return User.fromDTO(dto[0]);
-    }
+  async getUserById(username) {
+    const dto = await this.clientMongoDb.getUserById(username);
+    return User.fromDTO(dto[0]);
+  }
 
-    async getUsers() {
-        const users = await this.clientMongoDb.getAll();
-        return users.map(userDto => User.fromDTO(userDto));
-    }
+  async getUsers() {
+    const users = await this.clientMongoDb.getAll();
+    return users.map(userDto => User.fromDTO(userDto));
+  }
 
-    async deleteUserById(username) {
-        return await this.clientMongoDb.deleteUserById(username);
-    }
-}
+  async deleteUserById(username) {
+    return await this.clientMongoDb.deleteUserById(username);
+  }
+};
 
 module.exports = { UserDaoMongoDb };

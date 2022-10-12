@@ -375,3 +375,24 @@
 {"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
 {"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
 {"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"warn","message":"ruta: /api/index.js, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /carrito//productos?, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /Carrito, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"error","message":null}

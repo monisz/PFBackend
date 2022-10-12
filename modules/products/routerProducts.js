@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const isAdmin = require('./middlewares/isAdmin');
+const isAdmin = require('../middlewares/isAdmin');
 const logger = require('../../utils/loggers/winston');
 const { getAllProducts, getProductById, addProduct, updateProduct, deleteProductById } = require('./controllersProducts');
 

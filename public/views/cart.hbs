@@ -12,17 +12,22 @@
 </div>
 
 <div class="container p-3 my-4 bg-light" style="display:flex; justify-content:space-around">
-    <form action="/api/productos" method="GET" id="" >
+    <form action="/productos" method="GET" id="" >
         <button type="submit" class="btn btn-primary">Volver a productos</button>
     </form>
-    <form action="/api/carrito/{{idCart}}/productos" method="GET" id="" >
+    <form action="/carrito/{{idCart}}" method="GET" id="" >
         <button type="submit" class="btn btn-primary">Carrito</button>
     </form>
 </div>
 
 <div class="container p-4 my-5 bg-light" id="">
   {{#if productsInCart}}
-    <h1 style="color:blue">Tu carrito</h1><br>
+    {{#if orderNumber}}
+      <h1 style="color:blue">Orden de Compra Nº {{orderNumber}}</h1><br>
+      <h1 style="color:blue">Detalle de la orden</h1><br>
+    {{else}}
+      <h1 style="color:blue">Tu carrito</h1><br>
+    {{/if}}  
     {{#if cartModified}}
       <h3 style="background-color:aquamarine">El producto elegido se agregó al carrito</h3><br>
     {{/if}}  
@@ -46,10 +51,11 @@
         {{/each}}    
       </tbody>
     </table>
-    {{#if dataCheckout}}
+    {{#if orderNumber}}
+      <h2 style="color:blue">Total de la Orden de Compra $ {{totalOrder}}</h2><br>
       <h3 style="background-color:aquamarine">Gracias por su compra</h3><br>
     {{else}}
-      <form action="/api/carrito/compra" method="POST" id="" >
+      <form action="/carrito/compra" method="POST" id="" >
         <button type="submit" class="btn btn-primary">Finalizar compra</button>
       </form>
     {{/if}} 

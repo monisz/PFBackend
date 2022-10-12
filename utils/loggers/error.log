@@ -78,3 +78,15 @@
 {"level":"error","message":null}
 {"level":"error","message":null}
 {"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":"error en deleteById ReferenceError: result is not defined"}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}

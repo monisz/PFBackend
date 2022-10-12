@@ -31,7 +31,7 @@ class CartDaoMongoDb {
   /* } */
 
   async deleteById(id) {
-      return await this.clientMongoDb.deleteById(id);
+    return await this.clientMongoDb.deleteById(id);
   }
 }
 
