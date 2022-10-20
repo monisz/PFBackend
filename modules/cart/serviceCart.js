@@ -1,7 +1,5 @@
 const { CartDaoFactory } = require('./cartDaoFactory');
 const { Cart } = require('./cart');
-/* const sendMail = require('../../utils/mailer'); */
-/* const sendWhatsapp = require('../../utils/whatsapp'); */
 const argsparse = require('../../utils/argsparse');
 
 const daoFactory = new CartDaoFactory();
@@ -12,13 +10,14 @@ class CartService {
     this.dao = daoFactory.create(persistenceType);
   }
     
-  //Para crear el carrtio carrito luego del logueo
+  //Para crear el carrito luego del logueo
   async createCart (user) {
     const timestamp = Date.now();
     const products = [];
     const email = user.username;
     const address = user.address;
     const newCart = new Cart(timestamp, products, email, address);
+    console.log("newcart en controller", newCart)
     const newC = await this.dao.saveCart(newCart);
     console.log("nuevocarrito en servicecart", newC)
     return newC.id;
@@ -42,17 +41,6 @@ class CartService {
     const result = await this.dao.deleteById(id);
     return result;
   }
-    
-  /* //Envío de los avisos de compra por mail y whatsapp */
-  /* async sendPurchaseNotices(user, productsInCart) { */
-  /*   sendWhatsapp(user); */
-  /*   const dataCheckout = { */
-  /*     user: user, */
-  /*     products: productsInCart    */
-  /*   } */
-  /*   sendMail(dataCheckout); */
-  /*   return dataCheckout; */
-  /* } */
 }  
 
 module.exports = { CartService };

@@ -79,23 +79,10 @@ class ClientMongoDb {
     }
   }
 
-  async getById(idSearch) {
-    try {
-      const objectFinded = await this.collection.find({id: idSearch});
-      if (objectFinded.length > 0) {
-        logger.info(`objeto encontrado en getById, id: ${objectFinded[0].id}`);
-        return objectFinded;
-      }
-      else return null;
-    }
-    catch (error) {
-      logger.error(`error al buscar por id ${error}`);
-    }
-  }
-
   async getUserById(username) {
     try {
       const userFinded = await this.collection.find({username: username});
+      console.log("userFinded en client", userFinded)
       return userFinded;
     }
     catch (error) {

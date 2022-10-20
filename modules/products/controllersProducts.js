@@ -5,14 +5,16 @@ const productService = new ProductService();
 const getAllProducts = async (req, res) => {
   const allProducts = await productService.getListProducts();
   const products = productsToShow(allProducts);
-  const user = req.session.user;
-  const idCart = req.session.cart;
+  const user = req.user;
+  console.log("user en contprod getallprod", user)
+  const idCart = req.cart;
+  console.log("cart en contprod getallprod", idCart)
   const admin = process.env.ADMIN;
   res.render('products', {products, user, admin, idCart});
 };
 
 const getProductById = async (req, res) => {
-  const user = req.session.user;
+  const user = req.user;
   const id = parseInt(req.params.id);
   if (isNaN(id)) return res.status(400).send({error: "el parámetro no es un número"});
   const productFinded = await productService.getProduct(id);

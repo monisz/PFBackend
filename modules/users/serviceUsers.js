@@ -12,8 +12,9 @@ class UserService {
   }
     
   defineUser(dataUser) {
-    const { username, password, name, address, age, phone } = dataUser;
-    const user = new User(username, password, name, address, age, phone);
+    console.log("dataUser", dataUser)
+    const { username, password, name, phone } = dataUser;
+    const user = new User(username, password, name, phone);
     return user;
   }
 
@@ -23,7 +24,7 @@ class UserService {
   }
 
   async findUser(username) {
-    console.log("en finduser")
+    console.log("en finduser", username)
     const userFinded = await this.dao.getUserById(username);
     console.log(userFinded)
     return userFinded;
@@ -31,12 +32,18 @@ class UserService {
     
   //Para agregar un nuevo usuario
   async saveUser(newUser) {
-    await this.dao.saveUser(newUser);
+    /* console.log("dataUser", newUser) */
+    /* const { username, password, name, phone } = newUser; */
+    /* const user = new User(username, password, name, phone); */
+
+    /* console.log("en service", user) */
+    const user = this.defineUser(newUser)
+    await this.dao.saveUser(user);
   }
 
   async updateById(username, newData) {
-    const { password, name, address, age, phone } = newData;
-    const userModified = new User(username, password, name, address, age, phone);
+    const { password, name, phone } = newData;
+    const userModified = new User(username, password, name, phone);
     const updatedUser = await this.dao.updateById(username, userModified);
     return updatedUser;
   }

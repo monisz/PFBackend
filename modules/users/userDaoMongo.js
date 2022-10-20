@@ -1,5 +1,5 @@
 const { ClientMongoDb } = require('../../dataBase/clientMongoDb');
-const { userSchema } = require('../../dataBase/usersSchema');
+const { userSchema } = require('../../dataBase/userSchema');
 const { User } = require('./user');
 const { Database } = require('../../dataBase/connectionDatabase');
 
@@ -11,7 +11,11 @@ class UserDaoMongoDb {
   }
 
   async saveUser(user) {
+    console.log("user en datomongo", user)
     const dto = await user.toDTO();
+    /* const { username, password, name, phone } = newUser; */
+    /* const dto = { username, password, name, phone } */
+    console.log("dto", dto)
     return this.clientMongoDb.save(dto);
   }
 
@@ -21,8 +25,11 @@ class UserDaoMongoDb {
   }
 
   async getUserById(username) {
+    console.log("username en daomongo", username)
     const dto = await this.clientMongoDb.getUserById(username);
-    return User.fromDTO(dto[0]);
+    console.log(dto)
+    if (dto.length == 0) return dto;
+    else return User.fromDTO(dto[0]);
   }
 
   async getUsers() {

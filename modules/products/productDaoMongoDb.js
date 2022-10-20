@@ -10,12 +10,12 @@ class ProductDaoMongoDb {
   }
 
   async saveProduct(product) {
-    const dto = await product.toDto();
+    const dto = await product.toDTO();
     return this.clientMongoDb.save(dto);
   }
 
   async updateById(id, product) {
-    const dto = await product.toDto();
+    const dto = await product.toDTO();
     return this.clientMongoDb.replaceById(id, dto);
   }
 

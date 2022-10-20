@@ -1,10 +1,8 @@
 class User {
-  constructor(username, password, name, address, age, phone) {
+  constructor(username, password, name, phone) {
     this.username = username,
     this.password = password,
     this.name = name,
-    this.address = address,
-    this.age = age,
     this.phone = phone
   }
 
@@ -13,23 +11,19 @@ class User {
     user.username = dto.username;
     user.password = dto.password;
     user.name = dto.name;
-    user.address = dto.address;
-    user.age = dto.age;
     user.phone = dto.phone;
     return user;
   }
 
   toDTO() {
-    const { username, password, name, address, age, phone } = this;
+    const { username, password, name, phone } = this;
     return {
       username, 
       password, 
-      name, 
-      address, 
-      age, 
+      name,
       phone 
     }
   }
-};
+}
 
 module.exports = { User };

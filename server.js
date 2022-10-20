@@ -3,19 +3,19 @@ const express = require('express');
 const { engine } = require('express-handlebars');
 const { Server: HttpServer } = require('http');
 const { Server: SocketServer } = require('socket.io');
-const session = require('express-session');
+/* const session = require('express-session'); */
+const cp = require('cookie-parser');
 const MongoStore = require('connect-mongo');
-const passport = require('./modules/users/utils/passport');
+/* const passport = require('./modules/users/utils/passport'); */
 const numCPUs = require('os').cpus().length;
 const cluster = require('cluster');
-const compression = require('compression');
+/* const compression = require('compression'); */
 const logger = require('./utils/loggers/winston');
 const argsparse = require('./utils/argsparse');
 
 const apiRoutes = require('./src/routes/index');
 
-const colMessages = require('./src/containers/messagesContainer_firebase');
-const { getAllProducts } = require('./modules/products/controllersProducts');
+const { MessageService } = require('./modules/messages/serviceMessages');
 const { ProductService } = require('./modules/products/serviceProducts');
 
 const app = express();
@@ -24,27 +24,28 @@ const ioServer = new SocketServer(httpServer);
 
 app.use(express.static('public'));
 app.use(express.json());
+app.use(cp());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(session({
-  store: MongoStore.create({
-      mongoUrl: process.env.MONGO_ATLAS_CONNECTION,
-      dbName: 'ecommerce',
-      ttl: 10 * 60,
-      mongoOptions: {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-      }
-  }),
-  secret: 'desafio26',
-  resave: true,
-  rolling: true,
-  saveUninitialized: false
-}));
+/* app.use(session({ */
+/*   store: MongoStore.create({ */
+/*       mongoUrl: process.env.MONGO_ATLAS_CONNECTION, */
+/*       dbName: 'ecommerce', */
+/*       ttl: 10 * 60, */
+/*       mongoOptions: { */
+/*         useNewUrlParser: true, */
+/*         useUnifiedTopology: true */
+/*       } */
+/*   }), */
+/*   secret: 'desafio26', */
+/*   resave: true, */
+/*   rolling: true, */
+/*   saveUninitialized: false */
+/* })); */
 
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(compression());
+/* app.use(passport.initialize()); */
+/* app.use(passport.session()); */
+/* app.use(compression()); */
 
 app.engine(
   'hbs',
@@ -115,26 +116,22 @@ if (argsparse.mode === "cluster" || process.env.MODE === "cluster") {
   });
 } 
 
-const productService = new ProductService()
+const messageService = new MessageService();
 
 ioServer.on('connection', (socket) => {
   logger.info('Nuevo cliente conectado');
-  const getTables = (async () => {
-    socket.emit('messages', await colMessages.getAll());  
-    /* socket.emit('products', await getAllProducts()); */
-    socket.emit('products', await productService.getListProducts());
+  console.log("en ioserver")
+  const getMessages = (async () => {
+    socket.emit('messages', await messageService.getListMessages());
+    console.log("mensajes en server socketemit")
   }) ();  
   socket.on("newMessage", (message) => {
+    console.log("en socketon mensaje", message)
     const saveMessage = (async (message) => {
-      const messagesNorm = await colMessages.save(message);
-      ioServer.sockets.emit("messages", messagesNorm);
+      console.log("mensaje en server socket.on", message)
+      await messageService.saveMessage(message);
+      const allMessages = await messageService.getListMessages();
+      ioServer.sockets.emit("messages", allMessages);
     }) (message);
-  });
-  socket.on('newProduct', (product) => {
-    const getProducts = (async (product) => {
-      await tableProducts.save(product);
-      const allProducts = await tableProducts.getAll()
-      ioServer.sockets.emit("products", allProducts);
-    }) (product);
   });
 });

@@ -396,3 +396,97 @@
 {"level":"warn","message":"ruta: /carrito, método: GET no implementada"}
 {"level":"warn","message":"ruta: /, método: GET no implementada"}
 {"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /favicon.ico, método: GET no implementada"}
+{"level":"warn","message":"ruta: /mensajes, método: GET no implementada"}
+{"level":"warn","message":"ruta: /mensajes, método: GET no implementada"}
+{"level":"warn","message":"ruta: /mensajes, método: GET no implementada"}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{ messageBody: 'hola' }\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{ messageBody: 'hola' }\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{ messageBody: 'hola' }\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{ type: 'usuario', messageBody: 'buenas' }\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{\n  type: 'usuario',\n  timestamp: '16/10/2022, 23:53:03',\n  messageBody: 'buenas'\n}\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{\n  type: 'usuario',\n  timestamp: '16/10/2022, 23:53:12',\n  messageBody: 'buenas'\n}\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{ timestamp: '16/10/2022, 23:55:00', messageBody: 'soy lulio' }\" (type Object) at path \"messageBody\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: messageBody: Cast to string failed for value \"{ timestamp: '16/10/2022, 23:58:11', messageBody: 'soy lulio' }\" (type Object) at path \"messageBody\""}
+{"level":"error","message":null}
+{"level":"error","message":"el error al guardar fue: ValidationError: timestamp: Cast to date failed for value \"17/10/2022, 0:19:17\" (type string) at path \"timestamp\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: timestamp: Cast to date failed for value \"1.665.977.931.407\" (type string) at path \"timestamp\""}
+{"level":"error","message":"el error al guardar fue: ValidationError: email: Cast to string failed for value \"{}\" (type Object) at path \"email\""}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"error","message":null}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /avatars/.jpeg, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"error","message":"error al buscar por id CastError: Cast to string failed for value \"{}\" (type Object) at path \"username\" for model \"user\""}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /logoin, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito/?, método: GET no implementada"}
+{"level":"warn","message":"ruta: /logout, método: POST no implementada"}
+{"level":"warn","message":"ruta: /logout, método: POST no implementada"}
+{"level":"warn","message":"ruta: /logout, método: POST no implementada"}
+{"level":"warn","message":"ruta: /logout, método: POST no implementada"}
+{"level":"warn","message":"ruta: /logout, método: POST no implementada"}
+{"level":"warn","message":"ruta: /MENSAJES, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito, método: GET no implementada"}
+{"level":"warn","message":"ruta: /carrito, método: GET no implementada"}

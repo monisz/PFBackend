@@ -11,6 +11,7 @@ class CartDaoMongoDb {
   }
 
   async saveCart(cart) {
+    console.log("cart en mongo", cart)
     const dto = await cart.toDTO();
     return this.clientMongoDb.save(dto);
   }
@@ -24,11 +25,6 @@ class CartDaoMongoDb {
     const dto = await cart.toDTO();
     return this.clientMongoDb.replaceById(id, dto);
   }
-
-  /* async getProducts() { */
-  /*     const products = await this.clientMongoDb.getAll(); */
-  /*     return products.map(prodDto => Product.fromDTO(prodDto)); */
-  /* } */
 
   async deleteById(id) {
     return await this.clientMongoDb.deleteById(id);

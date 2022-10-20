@@ -1,7 +1,7 @@
 <div class="container p-3 my-4" style="background-color:rgb(165, 217, 250)">
-  <form class="row g-3" action="/logout" method="POST">  
+  <form class="row g-3" action="/logout" method="GET">  
     <div class="col-sm-4">
-      <h3 style="color:green">Bienvenido <img src="../avatars/{{user.username}}.jpeg" alt="avatar"></h3>
+      <h3 style="color:green">Bienvenido {{user.username}}</h3>
     </div>
     <div class="container p-3 my-4 col-sm-4">
       <h4 style="color:blue">Datos del usuario</h4>

@@ -1,34 +1,26 @@
 const router = require('express').Router();
-const passport = require('./utils/passport');
-const multer = require('multer');
-const { register, registerUser, failRegister, login, loginUser, faillogin, logout } = require('./controllersUsers');
-const { isLogin } = require('./utils/isLogin');
-
-const storage = multer.diskStorage({
-    destination: './public/avatars',
-    filename: (req, file, cb) => {
-      const fileName = req.body.username + ".jpeg";
-      cb(null, fileName)
-    }
-});
-
-const uploader = multer({storage: storage});
+const { register, registerUser, failRegister, login, loginUser, faillogin, logout, getUserById } = require('./controllersUsers');
+const { validateToken, authentication, registration } = require('./utils/auth');
+const { getAllProducts } = require('../products/controllersProducts');
 
 router.get('/register', register);
 
-router.post('/register', uploader.single('avatar'), passport.authenticate('register', {failureRedirect: '/failregister', failureMessage: true}), registerUser);
+router.post('/register', registration, registerUser);
 
 router.get('/failregister', failRegister);
 
-router.get('/login', login);
+router.get('/login', /* validateToken, */ login);
 
-router.post('/login', /* uploader.single('avatar'), */ passport.authenticate('login', {failureRedirect: '/faillogin', failureMessage: true}), loginUser);
+router.post('/login', authentication, loginUser);
 
 router.get('/faillogin', faillogin);
 
-router.use('/', isLogin);
+router.get('/', validateToken, getAllProducts);
+/*  */
+/* router.use('/', validateToken); */
 
-router.post('/logout', logout);
+router.get('/logout', validateToken, logout);
 
+/* router.get('/:email', getUserById); */
 
 module.exports = router;

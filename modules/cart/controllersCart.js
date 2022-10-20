@@ -10,13 +10,13 @@ const orderService = new OrderService();
 const getCartById = async (req, res) => {
   let idCart = 0;
   if (req.params.id) idCart = parseInt(req.params.id);
-  else idCart = req.session.cart;
+  else idCart = req.cart;
   if (isNaN(idCart)) return res.status(400).send({error: "el parámetro no es un número"});
   const cart = await cartService.getCart(idCart);
   if (!cart) res.status(404).send({error: "carrito no encontrado"});
   else {
     logger.info(`cart en get ${cart}`);
-    const user = req.session.user;
+    const user = req.user;
     const productsInCart = cart.products;
     res.render('cart', {productsInCart, user, idCart});
   }
@@ -29,7 +29,7 @@ const addProductToCart = async (req, res) => {
   const productToAdd = await productService.getProduct(idProduct);
   if (!productToAdd) res.status(404).send({error: "producto no encontrado"});
   else {
-    const idCart = req.session.cart;
+    const idCart = req.cart;
     const cartFinded = await cartService.getCart(idCart);
     if (!cartFinded) res.send('error: no existe ese carrito');
     else {
@@ -44,13 +44,12 @@ const addProductToCart = async (req, res) => {
       const cartModified = await cartService.updateCart(idCart, cartFinded);
       const productsInCart = cartModified[0].products;
       logger.info(`producto id: ${idProduct} agregado en carrito id: ${idCart}`);
-      const user = req.session.user;
+      const user = req.user;
       res.render('cart', {user, cartModified, productsInCart, idCart});
     }
   }
 };
 
-//Para borrar un carrito según el id
 const deleteCartById = (req, res) => {
   const id = parseInt(req.params.id);
   const result = cartService.deleteCart(id);
@@ -86,13 +85,13 @@ const deleteProductFromCart = async (req, res) => {
 //Al finalizar la compra 
 const checkout = async (req, res) => {
   console.log("en checlout")
-  const idCart = req.session.cart;
+  const idCart = req.cart;
   console.log("en checkout", idCart)
   const cartFinded = await cartService.getCart(idCart);
   if (!cartFinded) res.send('error: no existe ese carrito');
   else {
     const productsInCart = cartFinded.products;
-    const user = req.session.user;
+    const user = req.user;
     /* const dataCheckout = cartService.sendPurchaseNotices(user, productsInCart);     */    
     /* logger.info(`productos comprados ${productsInCart}`); */
     /* res.render('cart', {productsInCart, user, idCart, dataCheckout}); */
