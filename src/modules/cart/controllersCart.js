@@ -46,6 +46,7 @@ const addProductToCart = async (req, res) => {
       const productsInCart = cartModified[0].products;
       logger.info(`producto id: ${idProduct} agregado en carrito id: ${idCart}`);
       const user = req.user;
+      console.log("direccion en carrito", cartFinded.address)
       res.render('cart', {user, cartModified, productsInCart, idCart});
     }
   }

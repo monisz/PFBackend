@@ -22,7 +22,10 @@ const getInfo =  (req, res) => {
     mode: argsparse.mode,
     port: port,
     persistenceType: argsparse.persistenceType,
-    sessionTime: argsparse.sessionTime
+    sessionTime: argsparse.sessionTime,
+    mongo_db: process.env.MONGO_DB,
+    mongo_atlas: process.env.MONGO_ATLAS_CONNECTION,
+    admin_email: process.env.GMAIL_USER
   };
   logger.info(`info en /info ${info}`);
   res.render('info', {info});

@@ -19,6 +19,7 @@ const registration = async (req, res, next) => {
       username: req.body.username, 
       password: passwordBcrypt,
       name: req.body.name,
+      address: req.body.address,
       phone: req.body.phone,
     };
     await userService.saveUser(newUser);

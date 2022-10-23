@@ -13,8 +13,8 @@ class UserService {
     
   defineUser(dataUser) {
     console.log("dataUser", dataUser)
-    const { username, password, name, phone } = dataUser;
-    const user = new User(username, password, name, phone);
+    const { username, password, name, address, phone } = dataUser;
+    const user = new User(username, password, name, address, phone);
     return user;
   }
 
@@ -32,11 +32,6 @@ class UserService {
     
   //Para agregar un nuevo usuario
   async saveUser(newUser) {
-    /* console.log("dataUser", newUser) */
-    /* const { username, password, name, phone } = newUser; */
-    /* const user = new User(username, password, name, phone); */
-
-    /* console.log("en service", user) */
     const user = this.defineUser(newUser)
     await this.dao.saveUser(user);
   }

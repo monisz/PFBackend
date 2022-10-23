@@ -136,17 +136,4 @@ class ClientMongoDb {
   }
 };
 
-/* class Carts extends Container { */
-/*     constructor(){ */
-/*         super(Cart); */
-/*     } */
-/* }; */
-/* const colCart = new Carts(); */
-/* class Users extends Container { */
-/*     constructor() { */
-/*         super(User); */
-/*     } */
-/* }; */
-/* const colUser = new Users(); */
-
-module.exports = { ClientMongoDb/* , mongooseConnection *//* colCart, colUser */ };
+module.exports = { ClientMongoDb };

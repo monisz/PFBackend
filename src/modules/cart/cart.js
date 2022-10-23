@@ -26,6 +26,6 @@ class Cart {
       address
     }
   }
-}
+};
 
 module.exports = { Cart };
