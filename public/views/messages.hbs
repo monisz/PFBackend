@@ -1,21 +1,33 @@
 <div class="container p-3 my-4 bg-light">
   <h2 style="color:blue">Centro de mensajes</h2>
-  
   <form onsubmit="return sendMessage()">
-    {{!-- <div class="mb-3 mt-3"> --}}
-    {{!--   <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required/><br/> --}}
-    {{!--   <input type="name" class="form-control" id="name" placeholder="Ingrese su nombre" required/><br/> --}}
-    {{!--   <input type="lastName" class="form-control" id="lastName" placeholder="Ingrese su apellido" required/><br/> --}}
-    {{!--   <input type="age" class="form-control" id="age" placeholder="Ingrese su edad" required/><br/> --}}
-    {{!--   <input type="alias" class="form-control" id="alias" placeholder="Ingrese su alias" required/><br/> --}}
-    {{!--   <input type="avatar" class="form-control" id="avatar" placeholder="Ingrese su avatar (foto, logo)" required/> --}}
-    {{!-- </div> --}}
-    <div id="messages"></div>
+    {{#if messagesByEmail}}
+      <div>
+        {{#each messagesByEmail}}
+        <p>
+          <strong style="color:blue">{{type}}</strong>
+          <strong style="color:blue">{{email}}</strong>
+          <span style="color:brown">{{timestamp}}</span>
+          <i style="color:green"> : {{messageBody}}</i>
+        </p>
+        {{/each}}
+      </div>
+    {{else}}
+      {{#if notMessagesByEmail}}
+        <h3 style="background-color:aquamarine">No existen mensajes de  {{email}}</h3><br>
+      {{else}}
+        <div id="messages"></div>
+      {{/if}}
+    {{/if}}
     <h4 style="color:green">Escribe tu mensaje</h4>
-    <h4 style="color:green" id="username">{{username}}</h4>
+    <h4 id="messageType">{{messageType}}</h4>
+    <h4 id="username">{{user.username}}</h4>
     <div class="mb-3 mt-3">
       <input type="text" class="form-control" id="text" placeholder="Ingresá un mensaje" required/>
     </div>
     <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+  </form>
+  <form action="/chat/{{user.username}}" method="GET" id="" >
+    <button type="submit" class="btn btn-primary">Ver solo mis mensajes</button>
   </form>
 </div>

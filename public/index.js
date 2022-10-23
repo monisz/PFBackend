@@ -3,16 +3,14 @@ const socket = io();
 //Mensajes
 
 const sendMessage = () => {
-    const type = "usuario";
-    const timestamp = new Date().toLocaleString();
-    const email = document.getElementById("username").innerHTML;
-    const messageBody = document.getElementById("text").value;
-    console.log(messageBody)
-    /* const message = { email, type, timestamp, messageBody }; */
-    const message =  { type, email, timestamp, messageBody };
-    console.log(message)
-    socket.emit("newMessage", message);
-    return false;
+  const timestamp = new Date().toLocaleString();
+  const type = document.getElementById("messageType").innerHTML;
+  const email = document.getElementById("username").innerHTML;
+  const messageBody = document.getElementById("text").value;
+  const message =  { type, email, timestamp, messageBody };
+  console.log(message)
+  socket.emit("newMessage", message);
+  return false;
 };
 
 const showMessage = (message) => {

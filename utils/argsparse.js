@@ -5,15 +5,15 @@ const argsparse = minimist(args, {
   default: {
     port: 8080,
     mode: 'fork',
-    persistenceType : 'mongoDb',
-    sessionTime: '10m'
+    sessionTime: '10m',
+    persistenceType : 'mongoDb'
   },
   alias: {
     p: 'port',
     m: 'mode',
-    t: 'persistenceType',
-    s: 'sessionTime'
+    s: 'sessionTime',
+    t: 'persistenceType'
   }
 });
 
-module.exports = argsparse;
+module.exports = { argsparse, args };
