@@ -11,6 +11,7 @@ const getInfo =  (req, res) => {
     arguments = puerto ;
   }
   const info = {
+    environment: process.env.NODE_ENV,
     arguments: arguments ,
     platform: process.platform,
     version: process.version,

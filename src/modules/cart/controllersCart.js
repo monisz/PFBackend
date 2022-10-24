@@ -2,7 +2,6 @@ const { CartService } = require(`./serviceCart`);
 const { ProductService } = require('../products/serviceProducts');
 const logger = require('../../../utils/loggers/winston');
 const { OrderService } = require('../orders/serviceOrders');
-const { findDangerousChanges } = require('graphql');
 
 const cartService = new CartService();
 const productService = new ProductService();
@@ -23,7 +22,7 @@ const getCartById = async (req, res) => {
   }
 };
 
-//Para agregar un producto al carrito por id del producto (el id del carrito es el de la session)
+//Para agregar un producto al carrito por id del producto (el id del carrito es req.cart)
 const addProductToCart = async (req, res) => {
   const idProduct = parseInt(req.params.id);
   if (isNaN(idProduct)) return res.status(400).send({error: "el parámetro no es un número"});
@@ -46,7 +45,6 @@ const addProductToCart = async (req, res) => {
       const productsInCart = cartModified[0].products;
       logger.info(`producto id: ${idProduct} agregado en carrito id: ${idCart}`);
       const user = req.user;
-      console.log("direccion en carrito", cartFinded.address)
       res.render('cart', {user, cartModified, productsInCart, idCart});
     }
   }

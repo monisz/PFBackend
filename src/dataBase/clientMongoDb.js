@@ -1,5 +1,5 @@
 const logger = require('../../utils/loggers/winston');
-logger.info("conectados a mongo");
+/* logger.info("conectados a mongo"); */
 class ClientMongoDb {
   constructor (collection, connect) {
     this.connection = connect;
@@ -97,7 +97,6 @@ class ClientMongoDb {
   async getUserById(username) {
     try {
       const userFinded = await this.collection.find({username: username});
-      console.log("userFinded en client", userFinded)
       return userFinded;
     }
     catch (error) {

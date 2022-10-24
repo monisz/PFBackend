@@ -17,15 +17,12 @@ class CartService {
     const email = user.username;
     const address = user.address;
     const newCart = new Cart(timestamp, products, email, address);
-    console.log("newcart en controller", newCart)
     const newC = await this.dao.saveCart(newCart);
-    console.log("nuevocarrito en servicecart", newC)
     return newC.id;
   }
     
   async getCart(id) {
     const cartFinded = await this.dao.getById(id);
-    console.log("getcart en servicecart", cartFinded)
     return cartFinded;
   }
     

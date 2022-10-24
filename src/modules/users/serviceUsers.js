@@ -12,7 +12,6 @@ class UserService {
   }
     
   defineUser(dataUser) {
-    console.log("dataUser", dataUser)
     const { username, password, name, address, phone } = dataUser;
     const user = new User(username, password, name, address, phone);
     return user;
@@ -24,9 +23,7 @@ class UserService {
   }
 
   async findUser(username) {
-    console.log("en finduser", username)
     const userFinded = await this.dao.getUserById(username);
-    console.log(userFinded)
     return userFinded;
   }
     
@@ -52,7 +49,7 @@ class UserService {
     else return userFinded;
   }
     
-  //Envío de los avisos de compra por mail y whatsapp
+  //Envío de los avisos de compra por mail
   async sendRegistrationNotices(user) {
     sendMail(user);
   }

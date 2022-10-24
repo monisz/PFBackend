@@ -1,9 +1,7 @@
 const { UserService } = require(`./serviceUsers`);
-const { CartService } = require('../cart/serviceCart');
 const logger = require('../../../utils/loggers/winston');
 
 const userService = new UserService();
-const cartService = new CartService();
 
 const register = (req, res) => {
   res.render('register');
@@ -44,10 +42,4 @@ const logout = (req, res) => {
   res.render('logout', {username});
 };
 
-const getUserById = async (req, res) => {
-  const username = req.query;
-  const user = await userService.findUser(username);
-  res.send(user);
-}
-
-module.exports = { register, registerUser, failRegister, login, loginUser, faillogin, logout, getUserById };
+module.exports = { register, registerUser, failRegister, login, loginUser, faillogin, logout };

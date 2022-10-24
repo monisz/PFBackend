@@ -11,7 +11,6 @@ class CartDaoMongoDb {
   }
 
   async saveCart(cart) {
-    console.log("cart en mongo", cart)
     const dto = await cart.toDTO();
     return this.clientMongoDb.save(dto);
   }

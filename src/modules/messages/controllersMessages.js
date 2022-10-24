@@ -15,17 +15,8 @@ const getMessages = async (req, res) => {
   }
 };
 
-/* const sendMessage = async (req, res) => { */
-/*   const email = req.user.username; */
-/*   console.log("email en controller", email) */
-/*   const message = req.body; */
-/*   const newMessage = await messageService.saveMessage(message, email); */
-/*   res.send('mensaje enviado', newMessage) */
-/* } */
-
 const getMessagesByEmail = async (req, res) => {
   const email = req.params.email;
-  console.log("email en controller", email)
   const allMessages = await messageService.getListMessages();
   const messagesByEmail = allMessages.filter(message => message.email === email);
   const user = req.user;
@@ -38,4 +29,4 @@ const getMessagesByEmail = async (req, res) => {
   res.render('messages', { messagesByEmail, user, messageType })
 };
 
-module.exports = { getMessages, /* sendMessage, */ getMessagesByEmail };
+module.exports = { getMessages, getMessagesByEmail };

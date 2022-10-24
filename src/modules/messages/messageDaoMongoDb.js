@@ -16,9 +16,7 @@ class MessageDaoMongoDb {
   }
 
   async saveMessage(message) {
-    console.log(message)
     const dto = await message.toDTO();
-    console.log("dto", dto)
     return this.clientMongoDb.save(dto);
   }
 }

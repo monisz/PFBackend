@@ -17,7 +17,7 @@ para Windows: >set VARIABLE=valor
 - CLUSTER: para entrar en modo cluster desde variable de entorno
 
 Está desarrollada solamente la persistencia en mongoDb, pero están preparadas las factorys para seguir desarrollando persistencia en memoria, archivo y firebase.
-Posee una ruta /info para ver la configuración del servidor.
+Posee una ruta /info para ver la configuración del servidor (solo ADMIN=true)
 
 
 (English)
@@ -37,4 +37,4 @@ for Windows: >set VARIABLE=value
 
 Only persistence in mongoDb is developed, but the factories are prepared
 to further develop persistence in memory, file and firebase.
-It has a /info path to see the server configuration.
+It has a /info path to see the server configuration (only ADMIN=true)

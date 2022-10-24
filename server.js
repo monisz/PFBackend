@@ -1,4 +1,7 @@
-require('dotenv').config();
+const path = require('path');
+require("dotenv").config({
+  path: path.resolve(__dirname, process.env.NODE_ENV + ".env")
+});
 const express = require('express');
 const { engine } = require('express-handlebars');
 const { Server: HttpServer } = require('http');
