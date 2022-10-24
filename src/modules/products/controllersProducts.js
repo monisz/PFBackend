@@ -25,7 +25,6 @@ const getProductsByData = async (req, res) => {
       res.render('products', {user, idCart, category});
   } else {
   const products = productsByCategory;
-  console.log("productsByCategory en controller", productsByCategory)
   res.render('products', {products, user, idCart});
   }
 } else {
@@ -55,7 +54,7 @@ const addProduct = async (req, res) => {
 //Recibe un id para actualizar un producto
 const getUpdateProduct = (req, res) => {
   const id = parseInt(req.params.id);
-  res.render('updateProduct', {id})
+  res.render('updateProduct', {id});
 };
 
 //Recibe los datos y actualiza un producto por id
@@ -93,8 +92,6 @@ const productsToShow = (items) => {
 
 module.exports = { 
   getAllProducts, 
- /*  getProductById,  */
- /*  getProductsByCategory, */
   getProductsByData,
   addProduct, 
   getUpdateProduct, 

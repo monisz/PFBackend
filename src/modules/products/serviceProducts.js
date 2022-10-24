@@ -15,7 +15,6 @@ class ProductService {
     return allProducts; 
   }
 
-  //Para agregar un producto
   async addProductToList (newProduct) {
     newProduct.timestamp = Date.now();
     const { title, description, thumbnail, price, category, timestamp } = newProduct;
@@ -32,21 +31,18 @@ class ProductService {
     return updatedProduct;
   }
 
-  //Para obtener un producto según su id
   async getProductById (id) {
     const productFinded = await this.dao.getProductById(id);
     if (!productFinded) return null;
     return productFinded;
   }
 
-  //Para obtener un producto según su categoría
   async getProductsByCategory (category) {
     const productsFinded = await this.dao.getProductsByCategory(category);
     if (!productsFinded) return null;
     return productsFinded;
   }
 
-  //Para borrar un producto según el id
   async deleteProduct (id) {
     //Para poder devolver el producto completo
     const productFinded = await this.dao.getProductById(id);

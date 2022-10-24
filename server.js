@@ -1,14 +1,15 @@
 const path = require('path');
-const { NODE_ENV } = require('./config');
+if(!process.env.NODE_ENV) process.env.NODE_ENV = "prod";
+console.log(process.env.NODE_ENV)
 require("dotenv").config({
-  path: path.resolve(__dirname, NODE_ENV + ".env")
+  path: path.resolve(__dirname, process.env.NODE_ENV + ".env")
 });
 const express = require('express');
 const { engine } = require('express-handlebars');
 const { Server: HttpServer } = require('http');
 const { Server: SocketServer } = require('socket.io');
 const cp = require('cookie-parser');
-const MongoStore = require('connect-mongo');
+/* const MongoStore = require('connect-mongo'); */
 const numCPUs = require('os').cpus().length;
 const cluster = require('cluster');
 const logger = require('./utils/loggers/winston');
@@ -75,15 +76,11 @@ if (argsparse.mode === "cluster" || process.env.MODE === "cluster") {
 
 ioServer.on('connection', (socket) => {
   logger.info('Nuevo cliente conectado');
-  console.log("en ioserver")
   const getMessages = (async () => {
     socket.emit('messages', await messageService.getListMessages());
-    console.log("mensajes en server socketemit")
   }) ();  
   socket.on("newMessage", (message) => {
-    console.log("en socketon mensaje", message)
     const saveMessage = (async (message) => {
-      console.log("mensaje en server socket.on", message)
       await messageService.saveMessage(message);
       const allMessages = await messageService.getListMessages();
       ioServer.sockets.emit("messages", allMessages);

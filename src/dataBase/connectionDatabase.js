@@ -1,12 +1,10 @@
 const mongoose = require('mongoose');
 const logger = require('../../utils/loggers/winston');
 
-/* const { MongoClient } = require('mongodb'); */
-
 let connection = null;
 class Database {
   constructor() {
-    if (process.env.NODE_ENV === "PROD") {
+    if (process.env.NODE_ENV === "prod") {
       const config = {
         mongoDb: {
           url: process.env.MONGO_ATLAS_CONNECTION,

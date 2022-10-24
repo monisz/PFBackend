@@ -45,7 +45,6 @@ const validateToken = (req, res, next) => {
   verificarJwt(req.cookies.token, (error, content) => {
     if (error) {
       req.user = null;
-      /* throw new Error('Token invalido'); */
       res.redirect('/login');
     } else {
       req.user = content.user;

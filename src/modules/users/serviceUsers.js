@@ -39,15 +39,6 @@ class UserService {
     const updatedUser = await this.dao.updateById(username, userModified);
     return updatedUser;
   }
-
-  async deleteUser(username) {
-    //Para poder devolver el usuario completo
-    //arreglar no tratar de borrar si no lo encontró
-    const userFinded = await this.dao.getUserById(username);
-    const result = await this.dao.deleteUserById(username);
-    if (result == 0) res.status(404).send({error: "producto no encontrado"});
-    else return userFinded;
-  }
     
   //Envío de los avisos de compra por mail
   async sendRegistrationNotices(user) {

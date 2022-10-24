@@ -30,10 +30,6 @@ class UserDaoMongoDb {
     const users = await this.clientMongoDb.getAll();
     return users.map(userDto => User.fromDTO(userDto));
   }
-
-  async deleteUserById(username) {
-    return await this.clientMongoDb.deleteUserById(username);
-  }
 };
 
 module.exports = { UserDaoMongoDb };

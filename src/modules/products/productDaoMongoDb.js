@@ -22,19 +22,14 @@ class ProductDaoMongoDb {
   async getProductById(id) {
     const dto = await this.clientMongoDb.getById(id);
     if (!dto) return null;
-    console.log("dto en daomongo", dto)
     return Product.fromDTO(dto[0]);
   }
 
   async getProductsByCategory(category) {
     const products = await this.clientMongoDb.getByCategory(category);
-    /* if (!dto) return null; */
-    /* console.log("dto en daomongo", dto) */
-    /* return Product.fromDTO(dto[0]); */
     if(!products) return null;
     return products.map(prodDto => Product.fromDTO(prodDto));
   }
-
 
   async getProducts() {
     const products = await this.clientMongoDb.getAll();

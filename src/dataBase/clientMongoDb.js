@@ -124,15 +124,6 @@ class ClientMongoDb {
       logger.error(`error en deleteById ${error}`);
     }
   }
-
-  async deleteUserById(username) {
-    try {
-      return result = await this.collection.deleteOne({username: username});
-    }
-    catch (error) {
-     logger.error(`error en deleteById ${error}`);
-    }
-  }
 };
 
 module.exports = { ClientMongoDb };
