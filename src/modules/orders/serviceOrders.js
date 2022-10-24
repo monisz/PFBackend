@@ -1,7 +1,7 @@
 const { OrderDaoFactory } = require('./orderDaoFactory');
 const { Order } = require('./order');
 const sendMail = require('../../../utils/mailer');
-const sendWhatsapp = require('../../../utils/whatsapp');
+/* const sendWhatsapp = require('../../../utils/whatsapp'); */
 const { argsparse } = require('../../../utils/argsparse');
 
 const daoFactory = new OrderDaoFactory();
@@ -43,7 +43,7 @@ class OrderService {
   //TODO ver desde donde mando el aviso de compra
   //Envío de los avisos de compra por mail y whatsapp
   async sendPurchaseNotices(user, orderNumber, productsInCart, totalOrder) {
-    sendWhatsapp(user);
+    /* sendWhatsapp(user); */
     const dataCheckout = {
       user: user,
       number: orderNumber,

@@ -1,6 +1,7 @@
 const path = require('path');
+const { NODE_ENV } = require('./config');
 require("dotenv").config({
-  path: path.resolve(__dirname, process.env.NODE_ENV + ".env")
+  path: path.resolve(__dirname, NODE_ENV + ".env")
 });
 const express = require('express');
 const { engine } = require('express-handlebars');

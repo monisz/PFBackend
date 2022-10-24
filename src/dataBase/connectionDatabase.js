@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const logger = require('../../utils/loggers/winston');
 
-const { MongoClient } = require('mongodb');
+/* const { MongoClient } = require('mongodb'); */
 
 let connection = null;
 class Database {
