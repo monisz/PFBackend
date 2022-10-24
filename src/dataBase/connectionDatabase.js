@@ -4,7 +4,8 @@ const logger = require('../../utils/loggers/winston');
 let connection = null;
 class Database {
   constructor() {
-    if (process.env.NODE_ENV === "prod") {
+    //cambio prod a production porque Heroku lo cambia así 
+    if (process.env.NODE_ENV === "production") {
       const config = {
         mongoDb: {
           url: process.env.MONGO_ATLAS_CONNECTION,
